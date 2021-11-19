@@ -50,15 +50,15 @@
 
                             <li class="nav-item"><a href="{{ url('/dashboard') }}" class="nav-link text-white @yield('dashboard') "><i class="fa fa-bar-chart" aria-hidden="true"></i> Dashboard</a></li>
 
-                            <li class="nav-item"><a href="#" class="nav-link text-white @yield('deposito') "><i class="fa fa-pencil-square" aria-hidden="true"></i> Cadastrar Depósito</a></li>
+                            <li class="nav-item"><a href="{{ url('/deposito') }}" class="nav-link text-white @yield('deposito') "><i class="fa fa-pencil-square" aria-hidden="true"></i> Cadastrar Depósito</a></li>
 
-                            <li class="nav-item"><a href="#" class="nav-link text-white @yield('item') "><i class="fa fa-dropbox" aria-hidden="true"></i> Cadastrar Item</a></li>
+                            <li class="nav-item"><a href="{{ url('/item') }}" class="nav-link text-white @yield('item') "><i class="fa fa-dropbox" aria-hidden="true"></i> Cadastrar Item</a></li>
 
-                            <li class="nav-item"><a href="#" class="nav-link text-white @yield('transferencia') "><i class="fa fa-exchange" aria-hidden="true"></i> Transferência</a></li>
+                            <li class="nav-item"><a href="{{ url('/transferencia') }}" class="nav-link text-white @yield('transferencia') "><i class="fa fa-exchange" aria-hidden="true"></i> Transferência</a></li>
 
-                            <li class="nav-item"><a href="#" class="nav-link text-white @yield('itens') "><i class="fa fa-list-alt" aria-hidden="true"></i> Itens</a></li>
+                            <li class="nav-item"><a href="{{ url('/itens') }}" class="nav-link text-white @yield('itens') "><i class="fa fa-list-alt" aria-hidden="true"></i> Itens</a></li>
 
-                            <li class="nav-item"><a href="#" class="nav-link text-white @yield('movimentacoes') "><i class="fa fa-window-restore" aria-hidden="true"></i> Movimentações</a></li>
+                            <li class="nav-item"><a href="{{ url('/movimentacoes') }}" class="nav-link text-white @yield('movimentacoes') "><i class="fa fa-window-restore" aria-hidden="true"></i> Movimentações</a></li>
                         </ul>
                     </div>
                 </div>

@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
+
+Route::get('/deposito', function () {
+    return view('deposito');
+});
+
+Route::get('/item', function () {
+    return view('item');
+});
