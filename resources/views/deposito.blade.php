@@ -28,7 +28,7 @@
             </select>
         </div>
         <div class="mb-3">
-            <label for="descricao">Descrição</label>
+            <label for="descricao" class="form-label">Descrição</label>
             <textarea class="form-control" id="descricao" name="descricao" rows="3"></textarea>
         </div>
         <button type="submit" class="btn btn-primary btn-lg"> Cadastrar </button>
