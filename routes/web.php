@@ -28,3 +28,15 @@ Route::get('/deposito', function () {
 Route::get('/item', function () {
     return view('item');
 });
+
+Route::get('/itens', function () {
+    return view('itens');
+});
+
+Route::get('/movimentacoes', function () {
+    return view('movimentacoes');
+});
+
+Route::get('/transferencia', function () {
+    return view('transferencia');
+});
