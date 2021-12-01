@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DepositoController;
+use App\Http\Controllers\ProdutoController;
 
+use App\Models\Deposito;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,7 +29,8 @@ Route::get('/deposito', function () {
 });
 
 Route::get('/item', function () {
-    return view('item');
+    $depositos = Deposito::all();
+    return view('item', compact('depositos'));
 });
 
 Route::get('/itens', function () {
@@ -40,3 +44,7 @@ Route::get('/movimentacoes', function () {
 Route::get('/transferencia', function () {
     return view('transferencia');
 });
+
+Route::post('savedepform', [DepositoController::class, 'saveForm']);
+
+Route::post('saveitemform', [ProdutoController::class, 'saveItem']);

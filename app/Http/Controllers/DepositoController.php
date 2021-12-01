@@ -28,4 +28,12 @@ class DepositoController extends Controller
         $model = Deposito::findOrFail($id);
         $model->delete();
     }
+
+    public function saveForm(Request $request){
+        $resultado = Deposito::create($request->all());
+        if($resultado){
+            echo "<script> alert('Depósito Cadastrado com Sucesso!'); </script>";
+            return view('deposito');
+        }
+    }
 }
