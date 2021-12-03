@@ -4,9 +4,7 @@
 
 @section('movimentacoes', 'active')
 
-@section('breadcrumb')
-    Home / Movimentações
-@endsection
+@section('breadcrumb', 'Home / Movimentações')
 
 @section('conteudo')
     <table class="table table-striped">
@@ -20,27 +18,15 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>1</td>
-                <td>Computador</td>
-                <td>Entrada</td>
-                <td>Depósito 1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Computador DRF</td>
-                <td>Entrada</td>
-                <td>Depósito 2</td>
-                <td>10</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Nootebook</td>
-                <td>Entrada</td>
-                <td>Depósito 1</td>
-                <td>5</td>
-            </tr>
+            @foreach ($movimentos as $mov)
+                <tr>
+                    <td>{{ $mov->id }}</td>
+                    <td>{{ $mov->produto }}</td>
+                    <td>{{ $mov->tipo_transferencia }}</td>
+                    <td>{{ $mov->nome_estoque }}</td>
+                    <td>{{ $mov->quantidade }}</td>
+                </tr>
+            @endforeach
         </tbody>
     </table>
 @endsection

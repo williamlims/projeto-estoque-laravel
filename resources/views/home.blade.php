@@ -5,7 +5,7 @@
 @section('home', 'active')
 
 @section('breadcrumb')
-    Home 
+    Home
 @endsection
 
 @section('conteudo')

@@ -4,9 +4,7 @@
 
 @section('itens', 'active')
 
-@section('breadcrumb')
-    Home / Itens
-@endsection
+@section('breadcrumb', 'Home / Itens')
 
 @section('conteudo')
     <table class="table table-striped">
@@ -19,24 +17,14 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>1</td>
-                <td>Computador</td>
-                <td>Depósito 1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Computador DRF</td>
-                <td>Depósito 2</td>
-                <td>10</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Nootebook</td>
-                <td>Depósito 1</td>
-                <td>5</td>
-            </tr>
+            @foreach ($produtos as $prod)
+                <tr>
+                    <td>{{ $prod->id }}</td>
+                    <td>{{ $prod->produto }}</td>
+                    <td>{{ $prod->id_estoque }}</td>
+                    <td>{{ $prod->quantidade }}</td>
+                </tr>
+            @endforeach
         </tbody>
     </table>
 @endsection

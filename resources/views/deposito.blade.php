@@ -13,7 +13,7 @@
     <form action="{{ url('savedepform') }}" method="post">
         @csrf
         <div class="mb-3">
-            <label for="nome" class="form-label">Nome de Depósito</label>
+            <label for="nome" class="form-label">Nome do Depósito</label>
             <input type="text" class="form-control" id="nome" name="nome">
         </div>
         <div class="mb-3">
